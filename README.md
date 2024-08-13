@@ -1,4 +1,6 @@
 # Learning Confidence Bounds for Classification with Imbalanced Data - ECAI 2024
+Package for our paper: https://arxiv.org/abs/2407.11878
+
 
 ## Setting up Environment
 First clone this repo
