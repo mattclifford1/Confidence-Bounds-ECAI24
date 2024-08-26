@@ -1,8 +1,11 @@
 import numpy as np
 from tqdm import tqdm
-from torchvision import transforms
-from torchvision import datasets
-from torch.utils import data as torch_data
+try:
+    from torchvision import transforms
+    from torchvision import datasets
+    from torch.utils import data as torch_data
+except ImportError:
+    pass
 import deltas
 import os
 

@@ -2,7 +2,10 @@ import functools
 
 from sklearn.decomposition import PCA, KernelPCA
 from imblearn.over_sampling import SMOTE
-import umap
+try:
+    import umap
+except ImportError:
+    pass
 
 import deltas.data.utils as utils
 import deltas.data.XOR as XOR

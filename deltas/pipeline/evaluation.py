@@ -4,7 +4,6 @@ import pandas as pd
 from sklearn.metrics import accuracy_score, f1_score, precision_score, auc, roc_auc_score, precision_recall_fscore_support
 from imblearn.metrics import geometric_mean_score
 import matplotlib.pyplot as plt
-import umap
 
 import deltas.plotting.plots as plots
 import deltas.utils.projection as projection

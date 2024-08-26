@@ -165,7 +165,7 @@ def main():
         'Results-2-Breast Cancer.txt',
         'Results-3-Hepatitis.txt',
         'Results-4-Heart Disease.txt',
-        'Results-5-MIMIC-III-mortality.txt'
+        # 'Results-5-MIMIC-III-mortality.txt'
                 ]
     combine_tables(tables)
 

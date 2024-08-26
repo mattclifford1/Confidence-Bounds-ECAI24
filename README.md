@@ -1,6 +1,8 @@
 # Learning Confidence Bounds for Classification with Imbalanced Data - ECAI 2024
 Package for our paper: https://arxiv.org/abs/2407.11878
 
+Make sure to keep up to date with our latest version of this package found at: https://github.com/mattclifford1/Confidence-Bounds-ECAI24 
+
 
 ## Setting up Environment
 First clone this repo
@@ -21,9 +23,15 @@ pip install -e .
 ## Reproducing the experiments from the paper
 run the file 'experiments/run_all.py'
 
+```
+python experiments/run_all.py 
+```
+
 this will save each dataset's results to experiments/results and will combine all the results into one latex table experiments/combined_table.txt
 
 
 N.B. you will need to download and process and the MIMIC-ICU dataset externally as I do not have the rights to include it within this repo. Please contact me if you have any questions.
+
+
 ## Applying to your own classifier
-TODO: write docs for this...
+Check out our latest examples and documentation on how to apply to your own classifier and ways of customisation at: https://github.com/mattclifford1/Confidence-Bounds-ECAI24/examples.md

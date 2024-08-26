@@ -5,8 +5,6 @@ import matplotlib.pyplot as plt
 
 # from costcla.models.directcost import BayesMinimumRiskClassifier
 from deltas.costcla_local.models import BMR, Thresholding
-from deltas.classifiers.mnist_train import MNIST_torch, LargeMarginClassifier
-from deltas.classifiers.mimic_train import LargeMarginClassifierMIMIC
 import deltas.plotting.plots as plots
 import deltas.classifiers.models as models
 import deltas.pipeline.data as pipe_data
@@ -98,6 +96,8 @@ def get_classifier(data_clf, model='Linear', balance_clf=False, costcla_methods=
         clf_weighted = models.NN(class_weight='balanced').fit(data['X'], data['y'])
         clf_SMOTE = models.NN().fit(SMOTE_data['X'], SMOTE_data['y'])
     elif model == 'MNIST':
+        # you will need to download torch for this network
+        from deltas.classifiers.mnist_train import MNIST_torch, LargeMarginClassifier
         model = MNIST_torch
         # model = LargeMarginClassifier
         clf = model(hots=1, lr=0.01, cuda=True).fit(
