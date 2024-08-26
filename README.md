@@ -34,4 +34,4 @@ N.B. you will need to download and process and the MIMIC-ICU dataset externally 
 
 
 ## Applying to your own classifier
-Check out our latest examples and documentation on how to apply to your own classifier and ways of customisation at: https://github.com/mattclifford1/Confidence-Bounds-ECAI24/examples.md
+Check out our latest examples and documentation on how to apply to your own classifier and ways of customisation at: https://github.com/mattclifford1/Confidence-Bounds-ECAI24/blob/main/examples.md
